@@ -31,7 +31,16 @@ All these words ends with d, except for “mat” and “cat”.
 
 
 def suffix_words(suffix, words):
-    pass
+  output = []
+  
+  for word in words:
+    flag = True  
+    for i in range(0,len(suffix)):
+      if (suffix[i-len(suffix)] != word[i-len(suffix)]):
+        flag = False
+    if (flag):
+      output.append(word)  
+  return output
 
 
 class TestSuffixWords(unittest.TestCase):
