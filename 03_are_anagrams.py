@@ -31,7 +31,14 @@ False
 # Implement the below function and run the program
 
 def are_anagrams(word1, word2):
-    pass
+    list_01 = list(word1)
+    list_02 = list(word2)
+    list_01.sort()
+    list_02.sort()
+    if (list_01 == list_02):
+      return True
+    else:
+      return False
 
 
 class TestAreAnagrams(unittest.TestCase):
