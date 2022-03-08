@@ -23,7 +23,6 @@ Although 19 is prime, 91 is not.
 
 
 ## Code taken from Thrigun Meduri
-
 # Implement the below function and run the program
 
 def is_rotating_prime(num):
